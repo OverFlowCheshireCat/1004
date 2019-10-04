@@ -1,0 +1,10 @@
+UX 가이드 라인 정보 : developer.android.com
+
+jquery 포함 순서
+1. css
+2. jquery
+3. jquery.mobile
+
+알아 둘 것
+1. blocking, non-blocking
+2. synchronous, asynchronous

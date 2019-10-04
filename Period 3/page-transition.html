@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<title>jQuery Mobile</title>
+
+		<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+
+	<body>
+		<div data-role="page" id="first" data-title="첫번째 페이지">
+			<div data-role="header">
+				<h1>첫번째 페이지</h1>
+			</div>
+
+			<div data-role="content">
+				<a href="#second" data-ajax="false">2 Page</a>
+			</div>
+
+			<div data-role="footer">
+				<h4>내부 링크 방식</h4>
+			</div>
+		</div>
+
+		<div data-role="page" id="second" data-title="두번째 페이지">
+			<div data-role="header">
+				<h1>두번째 페이지</h1>
+			</div>
+
+			<div data-role="content">
+				<a href="#first" data-direction="reverse">1 Page</a><br>
+				<a href="#third">3 Page 기본 전환효과 적용</a><br>
+				<a href="#third" data-transition="slide">3 Page slide 적용</a><br>
+				<a href="#third" data-transition="slideup">3 Page slideup 적용</a><br>
+				<a href="#third" data-transition="slidedown">3 Page slidedown 적용</a><br>
+				<a href="#third" data-transition="flip">3 Page flip 적용</a><br>
+				<a href="#third" data-transition="fade">3 Page fade 적용</a><br>
+				<a href="#third" data-transition="pop">3 Page pop 적용</a><br>
+				<a href="#third" data-transition="none">3 Page none 적용</a>
+			</div>
+
+			<div data-role="footer">
+				<h4>내부 링크 방식</h4>
+			</div>
+		</div>
+
+		<div data-role="page" id="third" data-title="세번째 페이지">
+			<div data-role="header">
+				<h1>세번째 페이지</h1>
+			</div>
+
+			<div data-role="content">
+				<a href="#first" data-ajax="false">1 Page</a>
+				<a href="#somepage" data-rel="back" data-ajax="false">2 Page</a>
+			</div>
+
+			<div data-role="footer">
+				<h4>내부 링크 방식</h4>
+			</div>
+		</div>
+	</body>
+</html>
